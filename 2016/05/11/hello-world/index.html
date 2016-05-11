@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Loft Kitchen</title>
+  <title>Using Hexo To Setup A GitHub Page Blog | Loft Kitchen</title>
   <meta name="author" content="Zhetao Wang">
   
   <meta name="description" content="Code like a cook!">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="Hello World"/>
+  <meta property="og:title" content="Using Hexo To Setup A GitHub Page Blog"/>
   <meta property="og:site_name" content="Loft Kitchen"/>
 
   
@@ -55,21 +55,24 @@
       
       
   
-    <h1 class="title">Hello World</h1>
+    <h1 class="title">Using Hexo To Setup A GitHub Page Blog</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> is a Node.js based blog framework. It is very simple to use. To start building your blog with Hexo, you just need to know some Javascript, CSS and Markdown, which is a widely-used lightweight markup language for formatting text. Well, let’s start!</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h3><p>First, make sure you have the latest <a href="https://nodejs.org" target="_blank" rel="external">Node.js</a> installed.  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br><span class="line">v5.10.1</span><br><span class="line"></span><br><span class="line">$ npm -v</span><br><span class="line">3.8.3</span><br></pre></td></tr></table></figure>
+<p>Install Hexo as a global module:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>Initiate your blog folder <code>my-blog</code>:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> my-blog</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>Now you can see your blog folder has been initiated with a default blog.<br>Now open <code>_config.yml</code> to change some settings.</p>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>To learn how to create a post, please check Hexo <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing Documentation</a><br>To learn more about Markdown, there is a fantastic tutorial you should try: <a href="http://www.markdowntutorial.com/" target="_blank" rel="external">Markdown Tutorial</a></p>
+<h3 id="Test-and-Deploy"><a href="#Test-and-Deploy" class="headerlink" title="Test and Deploy"></a>Test and Deploy</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server <span class="comment"># or `hexo s` to start the local server</span></span><br><span class="line">$ hexo generate <span class="comment"># or `hexo g` to generate static files</span></span><br><span class="line">$ hexo deploy <span class="comment"># or `hexo d` to deploy the blog</span></span><br></pre></td></tr></table></figure>
+<p>To deploy to GitHub pages please check Hexo <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment Documentation</a></p>
 
       
     </div>
